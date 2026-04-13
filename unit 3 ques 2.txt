@@ -1,0 +1,16 @@
+def convert(c):
+    return (c * 9/5) + 32
+def convert(f):
+    return (f - 32) * 5/9
+def convert(c):
+    return c + 273.15
+from temperature import celsius_to_fahrenheit as cf
+from temperature import fahrenheit_to_celsius as fc
+from temperature import celsius_to_kelvin as ck
+
+c = float(input("Enter Celsius: "))
+print("Fahrenheit:", cf.convert(c))
+print("Kelvin:", ck.convert(c))
+
+f = float(input("Enter Fahrenheit: "))
+print("Celsius:", fc.convert(f))

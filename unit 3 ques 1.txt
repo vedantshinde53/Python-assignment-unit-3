@@ -1,0 +1,22 @@
+import math
+
+def circle(radius):
+    return math.pi * radius * radius
+
+def rectangle(l, w):
+    return l * w
+
+def triangle(b, h):
+    return 0.5 * b * h
+import shapes
+
+r = float(input("Enter radius: "))
+print("Circle area:", shapes.circle(r))
+
+l = float(input("Enter length: "))
+w = float(input("Enter width: "))
+print("Rectangle area:", shapes.rectangle(l, w))
+
+b = float(input("Enter base: "))
+h = float(input("Enter height: "))
+print("Triangle area:", shapes.triangle(b, h))
